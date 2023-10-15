@@ -29,11 +29,10 @@ function handleClickCloseBtn() {
 
 function handleClickTodoItem() {
   var todoList = document.querySelector('ul');
-
+  console.log(todoList)
   todoList.addEventListener('click', function(event) {
     if (event.target.tagName === 'LI') {
-      // Add the toggle below this comment: event.target.classList.toggle('class-name')
-      // YOUR CODE HERE (delete this comment)
+      event.target.classList.toggle('checked') 
     }
   }, false);
 }
